@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>OlpStudio Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>OlpStudio Web</h1>
+
+    <!-- Zone d'édition -->
+    <textarea id="editor" placeholder="Écris ton code .olmp ici..."></textarea>
+
+    <!-- Boutons -->
+    <div id="buttons">
+        <button onclick="runOlp()">Exécuter</button>
+        <button onclick="downloadFile()">Enregistrer</button>
+        <input type="file" id="fileInput" onchange="openFile()">
+    </div>
+
+    <!-- Zone d'exécution -->
+    <div id="output"></div>
+
+    <script src="interpreter.js"></script>
+</body>
+</html>
