@@ -3,25 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>OlpStudio Web</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
 
-    <h1>OlpStudio Web</h1>
+    <header>
+        <h1>OlpStudio Web</h1>
+    </header>
 
-    <!-- Zone d'édition -->
-    <textarea id="editor" placeholder="Écris ton code .olmp ici..."></textarea>
+    <main>
 
-    <!-- Boutons -->
-    <div id="buttons">
-        <button onclick="runOlp()">Exécuter</button>
-        <button onclick="downloadFile()">Enregistrer</button>
-        <input type="file" id="fileInput" onchange="openFile()">
-    </div>
+        <!-- Zone d'édition -->
+        <section id="editor-section">
+            <h2>Éditeur Olp</h2>
+            <textarea id="editor" placeholder="Écris ton code .olmp ici..."></textarea>
 
-    <!-- Zone d'exécution -->
-    <div id="output"></div>
+            <div id="buttons">
+                <button onclick="runOlp()">Exécuter</button>
+                <button onclick="downloadFile()">Enregistrer</button>
+                <input type="file" id="fileInput" onchange="openFile()">
+            </div>
+        </section>
+
+        <!-- Zone d'exécution -->
+        <section id="output-section">
+            <h2>Résultat</h2>
+            <div id="output"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>OlpStudio Web — Créé par Olp Corporation by Likma Vornier</p>
+    </footer>
 
     <script src="interpreter.js"></script>
 </body>
