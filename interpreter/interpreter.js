@@ -9,7 +9,7 @@ function runOlp() {
 
     lines.forEach(line => {
 
-        let l = line.trim();
+        line = line.trim();
 
         // --- SFG <Police> ---
         if (line.startsWith("SFG <")) {
